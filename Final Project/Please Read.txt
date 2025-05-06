@@ -1,0 +1,10 @@
+These classes are interconnected and run off each other.
+
+This project is about a hospitol, we made ways for incoming paients to queue and be checked in and to see a doctor. After they are placed in another queue to see a Doctor. After they see their doctor they move to the discharge stack so they can be processed fully at a later time.
+
+The Line Class to be checked in is an Array Based Queue, first come first serve. After they are checked they are automatically moved to a avaible doctor that is chosen by the operator.
+
+The DocLine Class is a Linked List; each doctor has their own queue in the form of a linked list and its a first come first serve. This allows for each doctor to handle their own queues. After they are examined and discharged they are automatically moved to the DisCharged Stack.
+	The PNode Class converts the paient to a Node so it can be used easily in the DocLine class.
+
+The DisCharged Class is a Node Based Stack, this puts the first discharged into the stack then the next; first in, first out. This allows the operator to process the people who left the earlist down to the person who left first.
